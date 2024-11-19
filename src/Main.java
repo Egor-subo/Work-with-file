@@ -13,6 +13,9 @@ public class Main {
         Task.WriteInFile(fileName,"!@#$%^&*()");
         System.out.println("Данные из файла:" + Task.ReadDataFile(fileName));
         try {
+            Task.ClearFile(fileName);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 
