@@ -10,7 +10,7 @@ import java.io.IOException;
             File file = new File(fileName);
             if (!file.exists()) {
                 file.createNewFile();
-                System.out.println("Файл создан: "+ fileName);
+                System.out.println("Дата создания файла: "+ fileName);
             } else {
                 System.out.println("Файл уже существует: "+ fileName);
             }
